@@ -38,7 +38,7 @@ MAXBLOCK = 65536
 
 SAFEBLOCK = 1024*1024
 
-LOAD_TRUNCATED_IMAGES = False
+LOAD_TRUNCATED_IMAGES = bool(os.environ.get('LOAD_TRUNCATED_IMAGES', False))
 
 ERRORS = {
     -1: "image buffer overrun error",
